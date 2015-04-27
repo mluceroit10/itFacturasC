@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE jdo SYSTEM "file:/javax/jdo/jdo.dtd">
+
+<jdo>
+   <package name="persistencia.domain">
+  <class name="Cheque" identity-type="datastore"> 
+	
+	<field name="id" />
+	<field name="fechaEmision" />	
+	<field name="fechaVto" />
+	<field name="banco"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>
+	<field name="numero" />
+	<field name="locPlaza"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+
+	<field name="importe" /> 
+	<field name="quienEntrega"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+	
+	<field name="estado"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+	
+	<field name="aQuienRemite"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+	
+	<field name="periodo"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+     </class>
+    </package>
+</jdo>	

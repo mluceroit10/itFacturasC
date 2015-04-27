@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE jdo SYSTEM "file:/javax/jdo/jdo.dtd">
+
+<jdo>
+   <package name="persistencia.domain">
+
+	<class name="MovimientoCaja" identity-type="datastore">
+
+   	<field name="id" />  
+  	<field name="fechaMC" />
+  	<field name="codigo" />
+  	<field name="descripcion"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+  	<field name="tipoMovimiento" />
+	<field name="formaPago"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+  	<field name="nroCheque" />
+	<field name="importe" />
+	<field name="conFactura" />
+	<field name="tipoFactura"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+		
+	<field name = "factura" persistence-modifier="persistent">
+      	<extension vendor-name="triactive" key="collection-field" value="comprobantesPago"/>
+    </field>
+    
+    <field name = "planilla" persistence-modifier="persistent">
+      	<extension vendor-name="triactive" key="collection-field" value="movimientosCaja"/>
+    </field>	
+    <field name="periodo"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>
+    
+    </class>
+    </package>
+</jdo>
+	
+	

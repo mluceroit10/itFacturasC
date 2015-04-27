@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE jdo SYSTEM "file:/javax/jdo/jdo.dtd">
+
+<jdo>
+   <package name="persistencia.domain">
+  <class name="NotaDebito" identity-type="datastore" persistence-capable-superclass="Factura"> 
+		
+    <field name="fecha" />
+	<field name="tipoFacturaNC">
+		<extension vendor-name="triactive" key="length" value="max 255"/>
+	</field>
+    <field name="nroFacturaNC" /> 
+    <field name="idFacturaNC" /> 
+    <field name="observaciones"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>
+    
+	 </class>
+    </package>
+</jdo>	

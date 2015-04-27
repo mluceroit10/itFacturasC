@@ -1,0 +1,23 @@
+Sistema Informático Ciro
+El sistema informatico presenta las siguientes funcionalidades de mayor interes:
+- Gestion de Movimientos de Caja: ABM
+- Gestion de Planillas de E/S de Dinero - Rep.
+- Gestion de Clientes. Incluye E Cuenta - Rep.
+- Gestion de Proveedores. Incluye E Cuenta - Rep.
+- Gestion de Productos. Incluye Listado Excel - Rep.
+- Control de Stock - Rep.
+- Deudas Pendientes - Rep.
+- Productos Facturados - Rep.
+- Facturacion Proveedor - Rep.
+- Facturacion Cliente - Rep.
+- Remito Cliente - Rep.
+- Libro Iva - Rep.
+
+Funcionalidades de uso minimo
+- Estadisticas - Rep.
+- Cheques
+- Notas Credito Cliente y Proveedor
+- Vendedor
+- Provincia
+- Localidad
+- Zona

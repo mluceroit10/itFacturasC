@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE jdo SYSTEM "file:/javax/jdo/jdo.dtd">
+
+<jdo>
+   <package name="persistencia.domain">
+    <class name="FacturaCliente" identity-type="datastore" 
+    persistence-capable-superclass="Factura"> 
+	
+	<field name="fechaImpresion" />
+	<field name="fechaPago" /> 
+	<field name="importeAbonado" />
+	<field name="condVenta"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+	<field name="ivaF"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+	<field name="remitoNro"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+	<field name="ingrBrutos"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	 
+
+    </class>
+    </package>
+</jdo>

@@ -1,0 +1,1 @@
+C:/mysql/bin/MYSQLDUMP.EXE --opt --password= --user=root dbitfacturasc jdo_table oid provincia localidad cliente comercio factura  factura_cliente nota_debito planilla_es movimiento_caja item_factura cheque >D:/desarrollos/it10/archivos_Soft_itFacturasC/backup/backupBD_27-dic-2014_hr_17-42-12.SQL

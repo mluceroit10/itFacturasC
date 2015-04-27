@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<!DOCTYPE jasperReport
+  PUBLIC "-//JasperReports//DTD Report Design//EN"
+  "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+  
+  <jasperReport name="TarjetaComercio"
+   		pageWidth="595"
+                pageHeight="842"
+                columnWidth="515"
+                columnSpacing="0"
+                leftMargin="40"
+                rightMargin="20"
+                topMargin="30"
+                bottomMargin="30">
+	<reportFont name="Arial_Normal" isDefault="true" fontName="Arial" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_Negrita_14" isDefault="false" fontName="Arial" size="14" isBold="true" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_10" isDefault="false" fontName="Arial" size="10" isBold="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_12" isDefault="false" fontName="Arial" size="12" isBold="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_13" isDefault="false" fontName="Arial" size="13" isBold="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_Titulo" isDefault="false" fontName="Arial" size="14" isBold="true" isItalic="true" pdfFontName="Helvetica-Oblique" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+    <parameter name="Nombre" class="java.lang.String"/>
+    <parameter name="Cuit" class="java.lang.String"/>
+    <parameter name="IngBrutos" class="java.lang.String"/>
+    <parameter name="Tel" class="java.lang.String"/>
+    <parameter name="Dir" class="java.lang.String"/>
+    <parameter name="Loc" class="java.lang.String"/>
+
+
+    <pageHeader>
+    <band height="200">
+    	<rectangle>
+                 <reportElement x="0" y="-5" width="325" height="160" />
+	         <graphicElement stretchType="NoStretch"/>
+	    </rectangle>
+    <textField isBlankWhenNull="true">
+		<reportElement x="5" y="0" width="315" height="20"/>
+			<textElement textAlignment="Center" lineSpacing="Single">
+			<font reportFont="Arial_Titulo"/>
+			</textElement>
+			<textFieldExpression class="java.lang.String">$P{Nombre}</textFieldExpression>
+		</textField>
+	  <textField isBlankWhenNull="true">
+		<reportElement x="100" y="30" width="220" height="20"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">$P{Cuit}</textFieldExpression>
+	  </textField>
+	  	  <textField isBlankWhenNull="true">
+		<reportElement x="100" y="50" width="220" height="20"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">$P{IngBrutos}</textFieldExpression>
+	  </textField>
+
+
+
+          	  <textField isBlankWhenNull="true">
+		<reportElement x="100" y="70" width="220" height="20"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">$P{Dir}</textFieldExpression>
+	  </textField>
+
+           <textField isBlankWhenNull="true">
+		<reportElement x="100" y="90" width="220" height="20"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">$P{Loc}</textFieldExpression>
+	  </textField>
+	  <textField isBlankWhenNull="true">
+		<reportElement x="100" y="110" width="220" height="40"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">$P{Tel}</textFieldExpression>
+	  </textField>
+          <staticText>
+		<reportElement x="5" y="30" width="95" height="20" />
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<text>CUIT</text>
+	</staticText>
+<staticText>
+		<reportElement x="5" y="50" width="95" height="20" />
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<text>INGR. BRUTOS</text>
+	</staticText>
+
+	<staticText>
+		<reportElement x="5" y="70" width="95" height="20" />
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<text>DIRECCION</text>
+	</staticText>
+	<staticText>
+		<reportElement x="5" y="90" width="95" height="20" />
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<text>LOCALIDAD</text>
+	</staticText>
+        <staticText>
+		<reportElement x="5" y="110" width="95" height="20" />
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<text>TELEFONO</text>
+	</staticText>
+	</band>
+    </pageHeader>
+    <columnHeader>
+         <band height="0"/>
+    </columnHeader>
+    <detail>
+	<band height="0">
+	</band>
+    </detail>
+    <pageFooter>
+	<band height="0">
+        </band>
+    </pageFooter>
+</jasperReport>

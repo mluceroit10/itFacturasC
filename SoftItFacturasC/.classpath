@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry path="src" kind="src"/>
+	<classpathentry path="lib/activation.jar" kind="lib"/>
+	<classpathentry path="lib/bcel.jar" kind="lib"/>
+	<classpathentry path="lib/commons-beanutils.jar" kind="lib"/>
+	<classpathentry path="lib/commons-collections.jar" kind="lib"/>
+	<classpathentry path="lib/commons-digester.jar" kind="lib"/>
+	<classpathentry path="lib/commons-logging.jar" kind="lib"/>
+	<classpathentry path="lib/itext-0.81.jar" kind="lib"/>
+	<classpathentry path="lib/itext-2.0.1.jar" kind="lib"/>
+	<classpathentry path="lib/itext-xml-0.93.jar" kind="lib"/>
+	<classpathentry path="lib/jasperreports-0.4.6.jar" kind="lib"/>
+	<classpathentry path="lib/jcalendar.jar" kind="lib"/>
+	<classpathentry path="lib/jcommon-0.6.4.jar" kind="lib"/>
+	<classpathentry path="lib/jcommon-1.0.9.jar" kind="lib"/>
+	<classpathentry path="lib/jdo.jar" kind="lib"/>
+	<classpathentry path="lib/jdo2.jar" kind="lib"/>
+	<classpathentry path="lib/jdo2-api-20070704-SNAPSHOT.jar" kind="lib"/>
+	<classpathentry path="lib/jdori.jar" kind="lib"/>
+	<classpathentry path="lib/jdori-enhancer.jar" kind="lib"/>
+	<classpathentry path="lib/jfreechart-0.9.2.jar" kind="lib"/>
+	<classpathentry path="lib/jfreechart-1.0.5.jar" kind="lib"/>
+	<classpathentry path="lib/jfreechart-1.0.5-experimental.jar" kind="lib"/>
+	<classpathentry path="lib/jfreechart-1.0.5-swt.jar" kind="lib"/>
+	<classpathentry path="lib/jpox-core-1.2.0-beta-3.jar" kind="lib"/>
+	<classpathentry path="lib/jpox-enhancer-1.2.0-beta-3.jar" kind="lib"/>
+	<classpathentry path="lib/junit.jar" kind="lib"/>
+	<classpathentry path="lib/log4j-1.2.8.jar" kind="lib"/>
+	<classpathentry path="lib/looks-1.2.2.jar" kind="lib"/>
+	<classpathentry path="lib/mail.jar" kind="lib"/>
+	<classpathentry path="lib/mysql-connector-java-3.0.11-stable-bin.jar" kind="lib"/>
+	<classpathentry path="lib/servlet.jar" kind="lib"/>
+	<classpathentry path="lib/swtgraphics2d.jar" kind="lib"/>
+	<classpathentry path="lib/tjdo.jar" kind="lib"/>
+	<classpathentry path="lib/tools.jar" kind="lib"/>
+	<classpathentry path="lib/xercesImpl.jar" kind="lib"/>
+	<classpathentry path="lib/xercesSamples.jar" kind="lib"/>
+	<classpathentry path="lib/xml-apis.jar" kind="lib"/>
+	<classpathentry path="lib/xmlParserAPIs.jar" kind="lib"/>
+	<classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"/>
+	<classpathentry path="lib/jxl.jar" kind="lib"/>
+	<classpathentry path="lib/poi-3.9-20121203.jar" kind="lib"/>
+	<classpathentry path="lib/cos.jar" kind="lib"/>
+	
+	<classpathentry path="classes" kind="output"/>
+</classpath>

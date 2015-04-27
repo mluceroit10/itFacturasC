@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<!DOCTYPE jasperReport
+  PUBLIC "-//JasperReports//DTD Report Design//EN"
+  "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+  
+  <jasperReport name="NotaDebito"
+   		pageWidth="594"
+                pageHeight="840"
+                columnWidth="515"
+                columnSpacing="0"
+                leftMargin="20"
+                rightMargin="20"
+                topMargin="20"
+                bottomMargin="20">
+	<reportFont name="Arial_Normal" isDefault="true" fontName="Arial" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_Negrita_14" isDefault="false" fontName="Arial" size="14" isBold="true" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_10" isDefault="false" fontName="Arial" size="10" isBold="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_11" isDefault="false" fontName="Arial" size="11" isBold="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_12" isDefault="false" fontName="Arial" size="12" isBold="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_13" isDefault="false" fontName="Arial" size="13" isBold="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<reportFont name="Arial_Titulo" isDefault="false" fontName="Arial" size="14" isBold="true" isItalic="true" pdfFontName="Helvetica-Oblique" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+
+    <parameter name="FechaFact" class="java.lang.String"/>
+
+    <parameter name="CteNombre" class="java.lang.String"/>
+    <parameter name="CteDomicilio" class="java.lang.String"/>
+    <parameter name="CteLoc" class="java.lang.String"/>
+    <parameter name="CteProv" class="java.lang.String"/>
+    <parameter name="CteCuit" class="java.lang.String"/>
+    <parameter name="Iva" class="java.lang.String"/>
+    <parameter name="Observaciones" class="java.lang.String"/>
+    <parameter name="IngBrutos" class="java.lang.String"/>
+    <parameter name="TotalFact" class="java.lang.String"/>
+
+    <field name="Cant" class="java.lang.String"/>
+    <field name="Producto" class="java.lang.String"/>
+    <field name="PUnit" class="java.lang.String"/>
+    <field name="PTotal" class="java.lang.String"/>
+
+
+    <pageHeader>
+    <band height="220">
+     <textField isBlankWhenNull="true">
+		<reportElement x="455" y="44" width="100" height="15"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_13"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">$P{FechaFact}</textFieldExpression>
+    </textField>
+
+       <textField isBlankWhenNull="true">
+		<reportElement x="10" y="120" width="540" height="15"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">"Señor(es): "+$P{CteNombre}</textFieldExpression>
+    </textField>
+    <textField isBlankWhenNull="true">
+		<reportElement x="10" y="140" width="250" height="15"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">"Domicilio: "+$P{CteDomicilio}</textFieldExpression>
+    </textField>
+    <textField isBlankWhenNull="true">
+		<reportElement x="270" y="140" width="160" height="15"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">"Localidad: "+$P{CteLoc}</textFieldExpression>
+    </textField>
+    <textField isBlankWhenNull="true">
+		<reportElement x="440" y="140" width="110" height="15"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">"Prov.: "+$P{CteProv}</textFieldExpression>
+    </textField>
+
+       <textField isBlankWhenNull="true">
+		<reportElement x="10" y="160" width="180" height="15"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">"I.V.A.: "+$P{Iva}</textFieldExpression>
+       </textField>
+
+       <textField isBlankWhenNull="true">
+		<reportElement x="200" y="160" width="170" height="15"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">"CUIT: "+$P{CteCuit}</textFieldExpression>
+       </textField>
+
+       <textField isBlankWhenNull="true">
+		<reportElement x="380" y="160" width="170" height="15"/>
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">"I. B.: "+$P{IngBrutos}</textFieldExpression>
+       </textField>
+
+       <textField isBlankWhenNull="true">
+		<reportElement x="10" y="180" width="540" height="15"/>
+		<textElement textAlignment="Left" lineSpacing="Single" >
+		<font reportFont="Arial_10"/>
+		</textElement>
+		<textFieldExpression class="java.lang.String">$P{Observaciones}</textFieldExpression>
+       </textField>
+
+         <staticText>
+		<reportElement x="5" y="200" width="40" height="15" />
+		<textElement textAlignment="Right" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<text>CANT.</text>
+	</staticText>
+
+	<staticText>
+		<reportElement x="105" y="200" width="270" height="15" />
+		<textElement textAlignment="Center" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<text>DESCRIPCION</text>
+	</staticText>
+	<staticText>
+		<reportElement x="380" y="200" width="60" height="15" />
+		<textElement textAlignment="Right" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<text>P. UNIT.</text>
+	</staticText>
+	<staticText>
+		<reportElement x="490" y="200" width="60" height="15" />
+		<textElement textAlignment="Right" lineSpacing="Single">
+		<font reportFont="Arial_11"/>
+		</textElement>
+		<text>IMPORTE</text>
+	</staticText>
+
+	</band>
+    </pageHeader>
+    <columnHeader>
+         <band height="0"/>
+    </columnHeader>
+    <detail>
+	<band height="12">
+	    <textField>
+	   	<reportElement x="5" y="0" width="40" height="12"/>
+          	<textElement textAlignment="Right"/>
+		<textFieldExpression class="java.lang.String">
+		$F{Cant}
+		</textFieldExpression>
+	    </textField>
+	    <textField isStretchWithOverflow="true">
+		<reportElement x="105" y="0" width="270" height="12" />
+		<textElement textAlignment="Left"/>
+		<textFieldExpression class="java.lang.String">
+		$F{Producto}
+		</textFieldExpression>
+	    </textField>
+	    <textField isStretchWithOverflow="true">
+		<reportElement x="380" y="0" width="60" height="12" positionType="Float"/>
+		<textElement textAlignment="Right"/>
+                <textFieldExpression class="java.lang.String">
+		$F{PUnit}
+		</textFieldExpression>
+	    </textField>
+	    <textField isStretchWithOverflow="true">
+		<reportElement x="490" y="0" width="60" height="12" positionType="Float"/>
+		<textElement textAlignment="Right"/>
+                <textFieldExpression class="java.lang.String">
+		$F{PTotal}
+		</textFieldExpression>
+	    </textField>
+	</band>
+    </detail>
+    <summary>
+	<band height="90">
+          <staticText>
+		<reportElement x="430" y="05" width="45" height="15" />
+		<textElement textAlignment="Left" lineSpacing="Single">
+		<font reportFont="Arial_12"/>
+		</textElement>
+		<text>TOTAL:</text>
+	</staticText>
+
+	<textField isBlankWhenNull="true">
+	      <reportElement x="480" y="05" width="70" height="15"/>
+	      <textElement textAlignment="Right" lineSpacing="Single">
+	      <font reportFont="Arial_12" />
+	      </textElement>
+              <textFieldExpression class="java.lang.String">$P{TotalFact}</textFieldExpression>
+          </textField>
+        </band>
+
+    </summary>
+</jasperReport>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE jdo SYSTEM "file:/javax/jdo/jdo.dtd">
+
+<jdo>
+   <package name="persistencia.domain">
+
+	  <class name="Localidad" identity-type="datastore">
+      
+  	<field name="id" />
+  	
+	<field name="nombre"> 
+		<extension vendor-name="triactive" key="length" value="max 255"/> 
+	</field>	
+
+	<field name="codPostal" />
+	
+	<field name = "provincia" persistence-modifier="persistent">
+      	<extension vendor-name="triactive" key="collection-field" value="localidades"/>
+      </field>
+     
+      </class>
+    </package>
+</jdo>
+	
+	

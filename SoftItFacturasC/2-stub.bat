@@ -1,0 +1,26 @@
+
+echo Generando stubs y skels...
+
+cd classes
+
+C:\j2sdk1.4.1_02\bin\rmic -vcompat -classpath "D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo2.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori-enhancer.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\tjdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\log4j-1.2.8.jar" -d D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes server.ControlFacturaCliente
+
+C:\j2sdk1.4.1_02\bin\rmic -vcompat -classpath "D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo2.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori-enhancer.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\tjdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\log4j-1.2.8.jar" -d D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes server.ControlComercio
+
+C:\j2sdk1.4.1_02\bin\rmic -vcompat -classpath "D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo2.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori-enhancer.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\tjdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\log4j-1.2.8.jar" -d D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes server.ControlLocalidad
+
+C:\j2sdk1.4.1_02\bin\rmic -vcompat -classpath "D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo2.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori-enhancer.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\tjdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\log4j-1.2.8.jar" -d D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes server.ControlMovimientoCaja
+
+C:\j2sdk1.4.1_02\bin\rmic -vcompat -classpath "D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo2.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori-enhancer.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\tjdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\log4j-1.2.8.jar" -d D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes server.ControlProvincia
+
+C:\j2sdk1.4.1_02\bin\rmic -vcompat -classpath "D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo2.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori-enhancer.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\tjdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\log4j-1.2.8.jar" -d D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes server.ControlCheque
+
+C:\j2sdk1.4.1_02\bin\rmic -vcompat -classpath "D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo2.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori-enhancer.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\tjdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\log4j-1.2.8.jar" -d D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes server.ControlCliente
+
+C:\j2sdk1.4.1_02\bin\rmic -vcompat -classpath "D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo2.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori-enhancer.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\tjdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\log4j-1.2.8.jar" -d D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes server.ControlNotaDebito
+
+C:\j2sdk1.4.1_02\bin\rmic -vcompat -classpath "D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdo2.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\jdori-enhancer.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\tjdo.jar;D:\desarrollos\it10\itFacturasC\SoftItFacturasC\lib\log4j-1.2.8.jar" -d D:\desarrollos\it10\itFacturasC\SoftItFacturasC\classes server.ControlPlanillaES
+
+   ;;
+
+pause
